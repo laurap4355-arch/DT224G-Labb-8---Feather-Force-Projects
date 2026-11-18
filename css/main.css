@@ -11,12 +11,20 @@
 
 /* Färger och typsnitt */
 :root {
+    /* Typsnitt */
     --font-heading: 'Poppins', sans-serif;
     --font-body: 'Inter', sans-serif;
 
+    /* Grundfärger */
     --color-primary: #2E7D5B;
     --color-text: #18324A;
     --color-background: #F7F8F5;
+
+    /* Kompletterande färger */
+    --color-navy: #26354B;
+    --color-dark-navy: #17202A;
+    --color-yellow: #EDBA2C;
+    --color-white: #ffffff;
 }
 
 /* Grundläggande sidinställningar */
@@ -36,7 +44,7 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Länkar */
 a {
-    color: #ffffff;
+    color: inherit;
 }
 
 /* Tangentbordsnavigering */
@@ -44,3 +52,167 @@ a {
     outline: 2px solid var(--color-primary);
     outline-offset: 3px;
 }
+/* ------------------------------------------------ */
+
+/* ==========================
+  Header - Mobile first 
+========================== */
+
+/* Sidhuvud */
+.site-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    flex-wrap: wrap;
+    padding: 1rem 2% ;
+    background-color: var(--color-dark-navy);
+    color: var(--color-white);
+    
+    
+}
+
+/* Logotyp */
+.logo img {
+    display: block;
+    width: 13rem;
+    height: auto;
+}
+
+/* Hamburgermeny */
+.menu-toggle {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.5rem;
+
+    background: transparent;
+    border: none;
+    color: var(--color-white);
+    font: inherit;
+    cursor: pointer;
+
+    transform: translateY(8px);
+}
+
+/* Menytext */
+.menu-text {
+    font-size: 1rem;
+    font-weight: 600;
+    letter-spacing: 0.05em;
+}
+
+/* Hamburgarikon */
+.menu-icon {
+    display: flex;
+    flex-direction: column;
+    gap: 0.3125rem;
+    
+}
+
+/* Hamburgarikonens tre linjer */
+.menu-icon span {
+    display: block;
+    width: 1.5rem;
+    height: 0.125rem;
+
+    background-color: currentColor;
+    border-radius: 0.125rem;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+/* Första linjen när menyn öppnas */
+.menu-toggle[aria-expanded="true"] .menu-icon span:first-child {
+    transform: translateY(7px) rotate(45deg);
+}
+
+/* Mittenlinjen när menyn öppnas */
+.menu-toggle[aria-expanded="true"] .menu-icon span:nth-child(2) {
+    opacity: 0;
+}
+
+/* Sista linjen när menyn öppnas */
+.menu-toggle[aria-expanded="true"] .menu-icon span:last-child {
+    transform: translateY(-7px) rotate(-45deg);
+}
+
+/* Navigation - dold på mobil */
+.navbar {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    
+    width: 100%;
+    gap: 1.5rem;
+}
+
+/* Visa navigation när menyn öppnas */
+.navbar.is-open {
+    display: flex;
+    padding: 1.5rem 0;
+
+    border-top: 1px solid rgba(245, 246, 243, 0.3);
+    border-bottom: 1px solid rgba(245, 246, 243, 0.3);
+}
+
+/* Navigationslista */
+.nav-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    gap: 0.125rem;
+    list-style: none;
+    font-weight: 500;
+}
+
+/* Navigationslänkar */
+.nav-list a {
+    display: inline-block;
+    padding: 0.5rem;
+
+    font-size: 1.25rem;
+    color: var(--color-white);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+/* Aktiv sida */
+.nav-list a.active {
+    color: var(--color-yellow);
+    text-decoration: underline;
+    text-decoration-color: var(--color-yellow);
+    text-decoration-thickness: 0.125rem;
+    text-underline-offset: 0.35rem;
+}
+
+/* Hover på navigationslänkar */
+.nav-list a:hover {
+    color: var(--color-yellow);
+}
+
+/* Join Us-knapp */
+.navbar .btn {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    background-color: var(--color-primary);
+
+    color: var(--color-white);
+    font-weight: 600;
+    text-decoration: none;
+    text-align: center;
+
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+}
+
+/* Hover på Join Us-knappen */
+.navbar .btn:hover {
+    background-color: #236146;
+}
+
+/* Tydligt tangentbordsfokus i headern */
+.site-header :focus-visible {
+    outline-color: var(--color-yellow);
+}
+
