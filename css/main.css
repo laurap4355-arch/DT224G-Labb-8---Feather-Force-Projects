@@ -216,3 +216,75 @@ a {
     outline-color: var(--color-yellow);
 }
 
+
+
+/* ==========================================
+   Header för laptop –  1024px
+========================================== */
+
+@media (min-width: 1024px) {
+
+    /* Sidhuvud */
+    .site-header {
+        display: flex;
+        flex-direction: row;
+        padding: 1.5rem 4%;
+
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        align-items: center;
+
+        position: sticky;
+        top: 0;
+        z-index: 1000;
+    }
+
+     /* Logotyp */
+    .logo {
+        margin-left: 0;
+    }
+
+    /* Logotyp bild */
+    .logo img {
+        width: 15rem;
+    }
+
+    /* Dölj hamburgermeny */
+    .menu-toggle {
+        display: none;
+    }
+
+    /* Navigation */
+    .navbar,
+    .navbar.is-open {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+
+        width: auto;
+        gap: 2.5rem;
+        padding: 0;
+        margin: 0;
+        border: none;
+    }
+
+    /* Navigationslista */
+    .nav-list {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 2rem;
+    }
+
+    /* Navigationslänkar */
+    .nav-list a {
+        font-size: 1.0625rem;
+        white-space: nowrap;
+    }
+
+    /* Join Us-knapp */
+    .navbar .btn {
+        padding: 0.875rem 1.75rem;
+        white-space: nowrap;
+    }
+}
