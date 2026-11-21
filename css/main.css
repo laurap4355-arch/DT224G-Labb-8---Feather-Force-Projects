@@ -25,6 +25,9 @@
     --color-dark-navy: #17202A;
     --color-yellow: #EDBA2C;
     --color-white: #ffffff;
+
+    /* Border linje färg */
+    --color-border: #d1d5db;
 }
 
 /* Grundläggande sidinställningar */
