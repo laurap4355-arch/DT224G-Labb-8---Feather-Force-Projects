@@ -230,17 +230,7 @@ a {
    margin-top: auto;
    color: var(--color-white);
    padding: 3rem 0 0;
-
-   background-image:
-        linear-gradient(
-            rgba(23, 32, 42, 0.65),
-            rgba(23, 32, 42, 0.75)
-        ),
-        url("../images/footer-mobile.png");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    aspect-ratio: 18/19;
+   background-color: var(--color-dark-navy);
 }
 
 /* Behållare för footerns innehåll */
@@ -424,30 +414,58 @@ a {
         padding: 0.875rem 1.75rem;
         white-space: nowrap;
     }
-}
 
 
-/* ==========================================
-   Header – Stora skärmar (från 1440px)
-========================================== */
-@media (min-width: 1920px) {
 
-    /* Logotyp */
-    .logo img{
+
+   /* ==========================================
+    Footer för laptop –  1024px
+   ========================================== */
+
+    /* Behållare med tre kolumner */
+    .footer-container {
+        display: grid;
+        grid-template-columns: 1.5fr 1fr 1.2fr;
+        align-items: start;   
+        gap: 2rem;
+
+        width: 92%;
+        max-width: none;
+        margin: 0 auto;
+    }
+
+    /* Logotyp i första kolumnen */
+    .footer-logo {
+        grid-column: 1;
+        justify-self: start;
+    }
+
+
+    /* Anpassar logotypens storlek */
+    .footer-logo img {
+        display: block;
         width: 20rem;
+        height: auto;
     }
 
-    /* Navigationslänkar */
-    .nav-list a {
-        font-size: 1.125rem;
-        
+    /* Nedre delen av footer */
+    .footer-bottom {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+
+        margin-top: 2rem;
+        padding: 1rem 5%;
     }
 
-    /* Join Us-knapp */
-    .navbar .btn {
-        padding: 1rem 4rem;
-        font-size: 1.15rem;
+    .footer-column a{
+        font-size: 1.2rem;
     }
-
     
 }
+
+
+    
+
+
+
