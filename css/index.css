@@ -2,25 +2,30 @@
   Hero sektion - Mobile first 
 ========================== */
 
+/* Behållare för hero-sektionens innehåll */
 .hero-container{
-    padding: 1rem 5%;
-    border-bottom: var(--color-border);
+    padding: 2rem 5%;
+    border-bottom: 1px solid var(--color-border);
 
 }
 
+/* Huvudrubrik */
 .hero-content h1{
     font-size: 2rem;
     max-width: 15ch;
     padding: 0.5rem 0;
 }
 
+/* presentation text */
 .hero-content p{
     font-size: 1rem;
     padding: 0.5rem 0;
+    
 }
 
 /* Gemensam stil för knappar */
 .button{
+    font-size: 1rem;
     padding: 0.75rem 1.5rem;
     margin: 0.5rem 0;
 }
@@ -38,6 +43,7 @@
     border: 2px solid var(--color-navy);
 }
 
+/* Hero-bild med rundade hörn och skugga */
 .hero-container img{
     display: block;
     width: 100%;
@@ -46,4 +52,104 @@
 
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.35);
     border-radius: 15px;
+}
+
+
+
+
+
+
+/* ==========================================
+   Hero-sektion för laptop –  1024px
+========================================== */
+
+@media (min-width: 1024px){
+
+    /* Två kolumner för text och bild */
+    .hero-container {
+        display: grid;
+        grid-template-columns: 2fr 3fr;
+        align-items: center;
+        padding: 2rem 4%;
+        gap: 2rem;
+    }
+
+    /* Flyttar hero-innehållet uppåt */
+    .hero-content{
+        transform: translateY(-5rem);
+    }
+    
+    /* Större huvudrubrik på laptop */
+    .hero-content h1{
+        font-size: 3.5rem;
+    }
+
+    /* Anpassar textstorlek och radlängd */
+    .hero-content p{
+        font-size: 1.125rem;
+        max-width: 42ch;
+        margin-bottom: 1rem;
+    }
+
+    /* Anpassar hero-bilden till sin kolumn */
+    .hero-container img {
+        display: block;
+        width: 100%;
+        height: auto;
+        border-radius: 1rem;
+        margin:0;
+       
+    }
+
+    /* Större knappar med mer mellanrum */
+    .button{
+        font-size: 1.125rem;
+        padding: 1.10rem 1rem;
+        margin-right: 1rem;
+    }
+}
+
+/* ==========================================
+   Hero-sektion för Desktop –   2650px
+========================================== */
+@media (min-width: 2650px) {
+
+    /* Anpassar kolumner och avstånd för stora skärmar */
+    .hero-container {
+        display: grid;
+        grid-template-columns: 2fr 3fr;
+        align-items: center;
+        padding: 3rem 4%;
+        gap: 4rem;
+    }
+
+    /* Flyttar hero-innehållet längre upp */
+    .hero-content {
+        transform: translateY(-10rem);
+    }
+
+    /* Större huvudrubrik med begränsad radlängd */
+    .hero-content h1 {
+        font-size: 5.5rem;
+        max-width: 15ch;
+    }
+
+    /* Anpassar textstorlek och radlängd  */
+    .hero-content p {
+        font-size: 1.5rem;
+        max-width: 45ch;
+        margin-bottom: 2rem;
+    }
+
+    /* Anpassar storleken på hero-etiketten */
+    .hero-content .label {
+        font-size: 1.25rem;
+    }
+
+    /* Anpassar knappar för stora skärmar */
+    .button {
+        font-size: 1.25rem;
+        padding: 1.25rem 2rem;
+    }
+
 }
