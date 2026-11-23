@@ -107,6 +107,7 @@
 /* Behållare för kortets bild och ikon */
 .card-media {
     position: relative;
+    min-height: 0;
 }
 
 /* Kortets huvudbild */
@@ -130,10 +131,20 @@
 
 }
 
-/* Kortets textinnehåll */
+/* Kortets textinnehåll och centrera texten */
 .card-content {
     padding: 2.5rem 1.5rem 1.5rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     text-align: center;
+}
+
+
+.card-content p{
+    font-size: 1rem;
 }
 
 /* Underrubrik nivå 3 */
@@ -156,6 +167,8 @@
 
 
 
+
+
 /* ==========================================
    Hero-sektion för laptop –  1024px
 ========================================== */
@@ -167,7 +180,7 @@
         display: grid;
         grid-template-columns: 2fr 3fr;
         align-items: center;
-        padding: 2rem 4%;
+        padding: 2rem 2%;
         gap: 2rem;
     }
 
@@ -204,7 +217,84 @@
         padding: 1.10rem 1rem;
         margin-right: 1rem;
     }
+
+    /* ==========================================
+   ABOUT-SEKTION – LAPTOP (1024px)
+   ========================================== */
+
+   /* Text till vänster och tre kort till höger */
+    .about-container {
+        grid-template-columns: minmax(0, 1fr) minmax(0, 2.3fr);
+        align-items: start;
+        gap: 2rem;
+        padding: 2rem 2%;
+        max-width: none;
+    }
+
+    /* Placerar de tre korten bredvid varandra */
+    .cards-container {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 1rem;
+    }
+
+    /* Bilderna får samma proportioner */
+    .card-image {
+        display: block;
+        width: 100%;
+        height: auto;
+        aspect-ratio: 4 / 3;
+        object-fit: cover;
+    }
+
+    /* Anpassa underrubrik nivå 2 storlek*/
+    .about-content h2{
+        font-size: 3.5rem;
+    }
+
+    /* Anpassa presentation textstorlek */
+    .about-content p{
+        font-size: 1.125rem;
+    }
+
+    /* Anpassa kortets rubrik storlek */
+    .card-content h3 {
+        font-size: 1.55rem;
+    }
+
+    /* Anpassa beskrivande textstorlek */
+    .card-content p{
+        font-size: 1.125rem;
+    }
+
+    
+
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* ==========================================
    Hero-sektion för Desktop –   2650px
@@ -216,7 +306,7 @@
         display: grid;
         grid-template-columns: 2fr 3fr;
         align-items: center;
-        padding: 3rem 4%;
+        padding: 2rem 2%;
         gap: 4rem;
     }
 
@@ -249,4 +339,51 @@
         padding: 1.25rem 2rem;
     }
 
+    .hero-container img{
+        height: 90%;
+        width: 100%;
+    }
+    /* =========================================== */
+
+
+    /* ==========================================
+   ABOUT-SEKTION – Desktop (2650px)
+   ========================================== */
+   
+   /* Anpassa underrubrik nivå 2 storlek*/
+    .about-content h2{
+        font-size: 5.5rem;
+    }
+
+    /* Anpassa presentation textstorlek */
+    .about-content p{
+        font-size: 1.5rem;
+        max-width: 45ch;
+        margin-bottom: 2rem;
+    }
+
+    /* Anpassa kortets rubrik storlek */
+    .card-content h3 {
+        font-size: 2.3rem;
+    }
+
+    /* Anpassa beskrivande textstorlek */
+    .card-content p{
+        font-size: 1.55rem;
+        max-width: 35ch;
+    }
+   
+    /* Anpassar storleken på hero-etiketten */
+    .about-content .label {
+        font-size: 1.25rem;
+    }
+
+    /* Anpassar ikon storlek */
+    .card-icon {
+        width: 7rem;
+        height: 7rem;
+
+}
+
+    
 }
