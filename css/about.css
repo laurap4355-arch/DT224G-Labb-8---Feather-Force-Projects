@@ -53,3 +53,115 @@
     border-radius: 15px;
 }
 /*===================================================== */
+
+
+/* ==========================
+  Our Story sektion - Mobile first 
+========================== */
+
+
+
+
+
+
+/* ==========================================
+   Hero-sektion för laptop –  1024px
+========================================== */
+
+@media (min-width: 1024px){
+
+    /* Två kolumner för text och bild */
+    .hero-container {
+        display: grid;
+        grid-template-columns: 2fr 3fr;
+        align-items: center;
+        padding: 2rem 2%;
+        gap: 2rem;
+    }
+
+    /* Flyttar hero-innehållet uppåt */
+    .hero-content{
+        transform: translateY(-5rem);
+    }
+    
+    /* Större huvudrubrik på laptop */
+    .hero-content h1{
+        font-size: 3.5rem;
+    }
+
+    /* Anpassar textstorlek och radlängd */
+    .hero-content p{
+        font-size: 1.125rem;
+        max-width: 42ch;
+        margin-bottom: 1rem;
+    }
+
+    /* Anpassar hero-bilden till sin kolumn */
+    .hero-container img {
+        display: block;
+        width: 100%;
+        height: auto;
+        border-radius: 1rem;
+        margin:0;
+       
+    }
+
+    /* Större knappar med mer mellanrum */
+    .button{
+        font-size: 1.125rem;
+        padding: 1.10rem 1rem;
+        margin-right: 1rem;
+    }
+}
+
+
+
+
+/* ==========================================
+   Hero-sektion för Desktop –   2650px
+========================================== */
+@media (min-width: 2650px) {
+
+    /* Anpassar kolumner och avstånd för stora skärmar */
+    .hero-container {
+        display: grid;
+        grid-template-columns: 2fr 3fr;
+        align-items: center;
+        padding: 2rem 2%;
+        gap: 4rem;
+    }
+
+    /* Flyttar hero-innehållet längre upp */
+    .hero-content {
+        transform: translateY(-10rem);
+    }
+
+    /* Större huvudrubrik med begränsad radlängd */
+    .hero-content h1 {
+        font-size: 5.5rem;
+    }
+
+    /* Anpassar textstorlek och radlängd  */
+    .hero-content p {
+        font-size: 1.5rem;
+        max-width: 45ch;
+        margin-bottom: 2rem;
+    }
+
+    /* Anpassar storleken på hero-etiketten */
+    .hero-content .label {
+        font-size: 1.25rem;
+    }
+
+    /* Anpassar knappar för stora skärmar */
+    .button {
+        font-size: 1.25rem;
+        padding: 1.25rem 2rem;
+    }
+
+    .hero-container img{
+        height: 90%;
+        width: 100%;
+    }
+    /* =========================================== */
+}
