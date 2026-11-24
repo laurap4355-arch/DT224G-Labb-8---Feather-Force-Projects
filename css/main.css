@@ -95,7 +95,21 @@ h1, h2, h3, h4, h5, h6 {
     transform: translateY(0);
 }
 
+/* Gemensam hover för  alla länkar */
+.events-link:hover,
+.events-link1:hover,
+.events-link3:hover,
+.events-link1:hover{
+    color: #245f46;
+}
 
+/* Gemensam avtive för alla länakr */
+.events-link:active,
+.events-link1:active,
+.events-link2:active,
+.events-link3:active{
+    color: #1b4935;
+}
 
 /* Länkar */
 a {
