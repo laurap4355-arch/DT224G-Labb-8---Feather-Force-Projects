@@ -541,31 +541,36 @@
         font-size: 0.875rem;
     }
 
+
+
+    /* ==========================
+    CTA-SEKTION - LAPTOP (1024px) 
+    ========================== */
+
+    /* CTA-section  */
+    .cta-section{
+        padding: 2rem 2%;
+    }
+
+    /* Text till vänster och bild till höger */
+    .cta-container {
+        grid-template-columns: 2fr 3fr;
+        padding: 4rem;
+        align-items: center;
+    }
+
+    /* Större rubrik */
+    .cta-content h2 {
+        font-size: 3.5rem;
+    }
+
+    .cta-content p{
+        font-size: 1.125rem;
+        max-width: 40ch;
+    }
+
+   
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -679,7 +684,7 @@
 
     /* Större beskrivning */
     .event-card-content p {
-        font-size: 1.55rem;
+        font-size: 1.5rem;
         max-width: 40ch;
     }
 
@@ -707,5 +712,42 @@
         padding: 1.5rem 1rem;
         font-size: 1rem;
     }
+
+    /* ==========================================
+   CTA-sektion för Desktop –  2650px
+   ========================================== */
+
+    /* Text till vänster och bild till höger */
+    .cta-container {
+        grid-template-columns:3fr 3fr;
+        padding: 4rem 5rem;
+        align-items: center;
+    }
+
+    /* Flytta upp hela cta content */
+    .cta-content{
+        transform: translateY(-5rem);
+    }
+    /* Större rubrik */
+    .cta-content h2 {
+        font-size: 5.5rem;
+    }
+
+    /* Större text */
+    .cta-content p{
+        font-size: 1.25rem;
+        max-width: 60ch;
+    }
+
+    /* Större etikett */
+    .cta-content .label{
+        font-size: 1.5rem;
+    }
+
+    /* Mer avstånd för knapp */
+    .button{
+        margin-top:1.5rem ;
+    }
+
 
 }
