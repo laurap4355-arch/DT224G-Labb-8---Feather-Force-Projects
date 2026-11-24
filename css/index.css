@@ -240,7 +240,7 @@
     top: 0.75rem;
     right: 0.75rem;
     z-index: 1;
-    padding: 0.4rem 0.6rem;
+    padding: 1rem 0.8rem;
 
     background-color: var(--color-yellow);
     color: var(--color-text);
@@ -484,7 +484,7 @@
 
     /* Datumetikett i kortets övre högra hörn */
     .event-date {
-        padding: 0.9rem 0.8rem;
+        padding: 1.5rem 1rem;
         font-size: 0.875rem;
     }
 
@@ -602,8 +602,57 @@
     .card-icon {
         width: 7rem;
         height: 7rem;
+    }
 
-}
 
+    /* ==========================
+    EVENTS-SEKTION - DESKTOP (2650px) 
+    ========================== */
     
+    /* Större rubrik på laptop */
+    .events-content h2 {
+        font-size: 5.5rem;
+    }
+
+    /* ANpassa etikett storlek */
+    .events-content .label{
+        font-size: 1.25rem;
+    }
+
+    /* Större rubrik i kortet */
+    .event-card-content h3 {
+        font-size: 2.5rem;
+    }
+
+    /* Större beskrivning */
+    .event-card-content p {
+        font-size: 1.55rem;
+        max-width: 40ch;
+    }
+
+    /* Länk1 View all */
+    .events-link1{
+      display: none;
+    }
+
+    /* Länk 2 View Details */
+    .events-link2{
+        font-size: 1.25rem;
+        transform: translateY(1rem);
+    }
+
+    /* Länk 3  View Upcoming*/
+    .events-link3{
+      display: inline;
+      font-size: 1.50rem;
+      color: var(--color-primary);
+      transform: translateX(-0.5rem);
+    }
+
+    /* Datumetikett i kortets övre högra hörn */
+    .event-date {
+        padding: 1.5rem 1rem;
+        font-size: 1rem;
+    }
+
 }
