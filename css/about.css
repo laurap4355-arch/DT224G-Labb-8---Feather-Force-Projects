@@ -134,7 +134,7 @@
         font-size: 3.5rem;
     }
 
-    /* Anpassar textstorlek och radlängd */
+    /* Anpassar textstorlek */
     .hero-content p{
         font-size: 1.125rem;
         max-width: 42ch;
@@ -156,6 +156,35 @@
         font-size: 1.125rem;
         padding: 1.10rem 1rem;
         margin-right: 1rem;
+    }
+
+
+    /* ==========================================
+   Story-sektion för laptop –  1024px
+   ========================================== */
+
+   /* Bild och text placeras bredvid varandra */
+    .story-container {
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+        gap: 5rem;
+        padding: 2rem 2%;
+    }
+
+    /* Flytta upp hela story-content */
+    .story-content{
+        transform: translateY(-2.9rem);
+    }
+
+    /* Större rubrik på laptop */
+    .story-content h2 {
+        font-size: 2rem;
+    }
+
+    /* Begränsar textens bredd och anpassa storlek */
+    .story-content p {
+        max-width: 55ch;
+        font-size: 1.125rem;
     }
 }
 
@@ -181,12 +210,12 @@
         transform: translateY(-10rem);
     }
 
-    /* Större huvudrubrik med begränsad radlängd */
+    /* Större huvudrubrik */
     .hero-content h1 {
         font-size: 5.5rem;
     }
 
-    /* Anpassar textstorlek och radlängd  */
+    /* Anpassar textstorlek */
     .hero-content p {
         font-size: 1.5rem;
         max-width: 45ch;
@@ -209,4 +238,41 @@
         width: 100%;
     }
     /* =========================================== */
+
+
+    /* ==========================================
+   Story -sektion för Desktop –   2650px
+   ========================================== */
+
+   /* Större avstånd mellan bild och text */
+    .story-container {
+        gap: 10rem;
+        padding: 5rem 4%;
+    }
+    
+    /* Anpassa etikett storlek */
+    .story-content .label{
+        font-size: 1.5rem;
+    }
+
+    /* Flyttar story-innehållet längre upp */
+    .story-content {
+        transform: translateY(-9rem);
+    }
+
+    /* Större rubrik */
+    .story-content h2 {
+        font-size: 5.5rem;
+    }
+
+    /* Större beskrivande text */
+    .story-content p{
+        font-size: 1.25rem;
+    }
+
+    /* Anpassar knappar för stora skärmar */
+    .story-content a {
+        transform: translateY(1rem);
+    }
+
 }
