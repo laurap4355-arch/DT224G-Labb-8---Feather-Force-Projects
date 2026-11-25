@@ -1,0 +1,56 @@
+/* ==========================
+  Hero sektion - Mobile first 
+========================== */
+
+/* Behållare för hero-sektionens innehåll */
+.hero-container{
+    padding: 2rem 5%;
+    border-bottom: 1px solid var(--color-border);
+}
+
+/* Huvudrubrik */
+.hero-content h1{
+    font-size: 2rem;
+    max-width: 14ch;
+    padding: 0.5rem 0;
+}
+
+/* presentation text */
+.hero-content p{
+    font-size: 1rem;
+    padding: 0.5rem 0;
+}
+
+/* Gemensam stil för knappar */
+.button{
+    font-size: 1rem;
+    padding: 0.75rem 1.5rem;
+    margin: 0.5rem 0;
+}
+
+/* Primär knapp */
+.button-primary {
+    background-color: var(--color-primary);
+    color: var(--color-white);
+}
+
+/* Sekundär knapp */
+.button-secondary {
+    background-color: transparent;
+    color: var(--color-text);
+    border: 2px solid var(--color-navy);
+}
+
+/* Hero-bild med rundade hörn och skugga */
+.hero-container img{
+    display: block;
+    width: 100%;
+    height: auto;
+    margin: 1.5rem 0 0;
+
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.35);
+    border-radius: 15px;
+}
+/*===================================================== */
+
+
