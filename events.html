@@ -67,7 +67,6 @@
     </header>
 
 
-
     <!-- Sidans huvudinnehålet -->
      <main>
 
@@ -101,12 +100,7 @@
                         <a href="#upcoming-events"
                         class="button button-primary"
                         >Explore Events &rightarrow;</a>
-
-                        <!-- Länk till veckans aktiviteter -->
-                        <a href="#weekly-sessions"
-                           class="button button-secondary">
-                            Weekly Sessions &rightarrow;
-                        </a>
+                        
                     </div>
                 </div>
 
@@ -115,6 +109,216 @@
                     alt="Feather Force members playing badminton together"
                     class="hero-image"
                 >
+            </div>
+        </section>
+
+
+        <!-- Upcoming Events - sektion -->
+        <section class="upcoming-section" id="upcoming-events">
+
+            <!-- Behållare för hela sektionens -->
+            <div class="upcoming-container">
+
+                <!-- sektionens innehåll -->
+                <div class="upcoming-content">
+
+                    <!-- Etikett -->
+                    <span class="label">WHAT'S HAPPENING</span>
+
+                    <!-- Underrubrik 2 -->
+                    <h2>Upcoming Club Events</h2>
+
+                    <!-- Beskrivande text -->
+                    <p>
+                        Find your next game, learn something new or celebrate together.
+                    </p>
+                </div>
+
+
+                <!-- Filterknappar för evenmang -->
+                <div class="events-filters" aria-label="Filter events">
+
+                    <!-- Visar alla evenemang -->
+                    <button
+                        type="button"
+                        class="event-filter active"
+                        data-filter="all"
+                        aria-pressed="true">
+                        All Events
+                    </button>
+
+                    <!-- Visar sociala evenemang -->
+                    <button
+                        type="button"
+                        class="event-filter"
+                        data-filter="social"
+                        aria-pressed="false">
+                        Social
+                    </button>
+
+                    <!-- Visar träningsevenemang -->
+                    <button
+                        type="button"
+                        class="event-filter"
+                        data-filter="training"
+                        aria-pressed="false">
+                        Training
+                    </button>
+
+                    <!-- Visar turneringar -->
+                    <button
+                        type="button"
+                        class="event-filter"
+                        data-filter="tournament"
+                        aria-pressed="false">
+                        Tournaments
+                    </button>
+                </div>
+
+                <!-- Behållare för evenemangskorten -->
+                <div class="events-grid">
+
+                    <!-- Kort 1: Welcome Social Night -->
+                    <article
+                        class="event-card"
+                        id="social-night"
+                        data-category="social">
+
+                        <!-- Evenemangets bild -->
+                        <img
+                            src="images/event-card1.png"
+                            alt="New members enjoying a social badminton evening together"
+                            class="event-card-img"
+                        >
+
+                        <!-- Kortets innehåll -->
+                        <div class="event-card-content">
+
+                            <!-- Evenemangets kategori -->
+                            <span class="event-category">
+                                SOCIAL EVENT
+                            </span>
+
+                            <!-- Rubrik nivå 3 -->
+                            <h3>Welcome Social Night</h3>
+
+                            <!-- Datum och plats -->
+                            <p class="event-info">
+                                15 March 2027 · Stockholm
+                            </p>
+
+                            <!-- Beskrivande text -->
+                            <p>
+                                Meet fellow badminton lovers,
+                                enjoy relaxed games, and build
+                                friendships beyond the court.
+                            </p>
+
+                            <!-- Länk till kontaktsidan -->
+                            <a href="contact.html"
+                               class="event-details-link">
+                                Ask About This Event &rightarrow;
+                            </a>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- Kort 2: Beginner Training Workshop -->
+                    <article
+                        class="event-card"
+                        id="training-workshop"
+                        data-category="training">
+
+                        <!-- Evenemangets bild -->
+                        <img
+                            src="images/event-card2.png"
+                            alt="New badminton players learning basic techniques during a training workshop"
+                            class="event-card-img"
+                        >
+
+                        <!-- Kortets innehåll -->
+                        <div class="event-card-content">
+
+                            <!-- Evenemangets kategori -->
+                            <span class="event-category">
+                                TRAINING
+                            </span>
+
+                            <!-- Rubrik nivå 3 -->
+                            <h3>Beginner Training Workshop</h3>
+
+                            <!-- Datum och plats -->
+                            <p class="event-info">
+                                22 March 2027 · Stockholm
+                            </p>
+
+                            <!-- Beskrivande text -->
+                            <p>
+                                Learn essential techniques,
+                                build confidence, and improve
+                                your game with friendly guidance.
+                            </p>
+
+                            <!-- Länk till kontaktsidan -->
+                            <a href="contact.html"
+                               class="event-details-link">
+                                Ask About This Event &rightarrow;
+                            </a>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- Kort 3: Spring Club Tournament -->
+                    <article
+                        class="event-card"
+                        id="tournament"
+                        data-category="tournament">
+
+                        <!-- Evenemangets bild -->
+                        <img
+                            src="images/event-card3.png"
+                            alt="Feather Force members competing in a spring club tournament"
+                            class="event-card-img"
+                        >
+
+                        <!-- Kortets innehåll -->
+                        <div class="event-card-content">
+
+                            <!-- Evenemangets kategori -->
+                            <span class="event-category">
+                                TOURNAMENT
+                            </span>
+
+                            <!-- Rubrik nivå 3 -->
+                            <h3>Spring Club Tournament</h3>
+
+                            <!-- Datum och plats -->
+                            <p class="event-info">
+                                12 April 2027 · Stockholm
+                            </p>
+
+                            <!-- Beskrivande text -->
+                            <p>
+                                Challenge yourself, cheer on your
+                                teammates, and experience the
+                                thrill of friendly competition.
+                            </p>
+
+                            <!-- Länk till kontaktsidan -->
+                            <a href="contact.html"
+                               class="event-details-link">
+                                Ask About This Event &rightarrow;
+                            </a>
+
+                        </div>
+
+                    </article>
+
+                </div>
             </div>
         </section>
        
