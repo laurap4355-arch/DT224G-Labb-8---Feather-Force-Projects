@@ -123,12 +123,13 @@
 }
 
 /* Sektionens rubrik */
-.values-header h2 {
+.values-content h2 {
     font-size: 2rem;
+    max-width: 15ch;
 }
 
 /* Sektionens beskrivning */
-.values-header p {
+.values-content p {
     font-size: 1rem;
 }
 
@@ -254,6 +255,58 @@
         max-width: 55ch;
         font-size: 1.125rem;
     }
+    /* =========================================== */
+
+
+    /* ==========================================
+   Values-sektion för laptop –  1024px
+   ========================================== */
+   /* Behållare för hela sektionen */
+   .values-container {
+        padding: 2rem 2%;
+    }
+
+    /* Större rubrik */
+    .values-content h2 {
+        font-size: 2rem;
+    }
+
+    /* Större text */
+    .values-content p{
+        font-size: 1.125rem;
+    }
+
+    /* Tre kort bredvid varandra */
+    .values-grid {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 1.5rem;
+        margin-top: 3rem;
+    }
+
+    /* Mer utrymme i korten */
+    .value-card {
+        padding: 2.5rem 1.5rem;
+    }
+
+    /* Större ikoner */
+    .value-icon {
+        width: 5rem;
+        height: 5rem;
+    }
+
+    /* Större rubriker */
+    .value-card h3 {
+        font-size: 1.55rem;
+    }
+
+    /* Större beskrivande text */
+    .value-card p {
+        font-size: 1.125rem;
+        max-width: 35ch;
+    }
+    /* ================================= */
+
+
 }
 
 
@@ -315,7 +368,7 @@
    /* Större avstånd mellan bild och text */
     .story-container {
         gap: 10rem;
-        padding: 5rem 4%;
+        padding: 2rem 2%;
     }
     
     /* Anpassa etikett storlek */
@@ -335,7 +388,7 @@
 
     /* Större beskrivande text */
     .story-content p{
-        font-size: 1.25rem;
+        font-size: 1.5rem;
     }
 
     /* Anpassar knappar för stora skärmar */
@@ -343,6 +396,53 @@
         transform: translateY(1rem);
     }
     /*===================================================== */
+
+
+    /* ==========================================
+   Values-sektion för laptop –  1024px
+   ========================================== */
+
+   /* Behållare för hela sektionen */
+   .values-container {
+        padding: 2rem 2%;
+    }
+
+    /* Större rubrik */
+    .values-content h2 {
+        font-size: 5.5rem;
+    }
+
+    /* Större text */
+    .values-content p{
+        font-size: 1.5rem;
+    }
+
+    /* Större etikett */
+    .values-content .label{
+        font-size: 1.25rem;
+    }
+
+    /* Mer utrymme i korten */
+    .value-card {
+        padding: 4rem ;
+    }
+
+    /* Större ikoner */
+    .value-icon {
+        width: 8rem;
+        height: 8rem;
+    }
+
+    /* Större rubriker */
+    .value-card h3 {
+        font-size: 2.5rem;
+    }
+
+    /* Större beskrivande text */
+    .value-card p {
+        font-size: 1.5rem;
+    }
+    /* ================================= */
 
 
 
