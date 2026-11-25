@@ -378,7 +378,7 @@
         display: grid;
         grid-template-columns: 2fr 3fr;
         align-items: center;
-        padding: 2rem 2%;
+        padding: 4rem 2%;
         gap: 2rem;
     }
 
@@ -425,7 +425,7 @@
         grid-template-columns: minmax(0, 1fr) minmax(0, 2.3fr);
         align-items: start;
         gap: 2rem;
-        padding: 2rem 2%;
+        padding: 4rem 2%;
         max-width: none;
     }
 
@@ -471,7 +471,7 @@
 
     /* Anpassar sektionens avstånd */
     .events-container {
-        padding: 2rem 2%;
+        padding: 4rem 2%;
     }
 
     /* Tre evenemangskort bredvid varandra */
@@ -549,7 +549,7 @@
 
     /* CTA-section  */
     .cta-section{
-        padding: 2rem 2%;
+        padding: 4rem 2%;
     }
 
     /* Text till vänster och bild till höger */
@@ -579,12 +579,9 @@
 ========================================== */
 @media (min-width: 2650px) {
 
-    /* Anpassar kolumner och avstånd för stora skärmar */
+    /* Anpassar  avstånd för stora skärmar */
     .hero-container {
-        display: grid;
-        grid-template-columns: 2fr 3fr;
-        align-items: center;
-        padding: 2rem 2%;
+        padding: 8rem 2%;
         gap: 4rem;
     }
 
@@ -628,6 +625,11 @@
    ABOUT-SEKTION – Desktop (2650px)
    ========================================== */
 
+   /* Anpassa behållare för about sektion  */
+   .about-container{
+    padding: 8rem 2%;
+   }
+
    /* Anpassa underrubrik nivå 2 storlek*/
     .about-content h2{
         font-size: 5.5rem;
@@ -666,7 +668,11 @@
     /* ==========================
     EVENTS-SEKTION - DESKTOP (2650px) 
     ========================== */
-    
+    /* Anpassa behållare för event sektion */
+   .events-container{
+     padding: 8rem 2%;
+   }
+
     /* Större rubrik på */
     .events-content h2 {
         font-size: 5.5rem;
@@ -722,6 +728,7 @@
         grid-template-columns:3fr 3fr;
         padding: 4rem 5rem;
         align-items: center;
+        padding: 8rem 2%;
     }
 
     /* Flytta upp hela cta content */

@@ -258,7 +258,7 @@
             display: grid;
             grid-template-columns: 2fr 3fr;
             align-items: center;
-            padding: 2rem 2%;
+            padding: 4rem 2%;
             gap: 2rem;
         }
 
@@ -307,7 +307,7 @@
             grid-template-columns: 1fr 1fr;
             align-items: center;
             gap: 5rem;
-            padding: 2rem 2%;
+            padding: 4rem 2%;
         }
 
         /* Flytta upp hela story-content */
@@ -333,7 +333,7 @@
     ========================================== */
     /* Behållare för hela sektionen */
     .values-container {
-            padding: 2rem 2%;
+            padding: 4rem 2%;
         }
 
         /* Större rubrik */
@@ -384,7 +384,7 @@
     
     /* Behållare för hela our community - sektion */
     .community-container{
-        padding: 2rem 2%;
+        padding: 4rem 2%;
     }
 
     /* Fyra kort bredvid varandra  */
@@ -436,7 +436,7 @@
         display: grid;
         grid-template-columns: 2fr 3fr;
         align-items: center;
-        padding: 2rem 2%;
+        padding: 8rem 2%;
         gap: 4rem;
     }
 
@@ -482,7 +482,7 @@
    /* Större avstånd mellan bild och text */
     .story-container {
         gap: 10rem;
-        padding: 2rem 2%;
+        padding: 8rem 2%;
     }
     
     /* Anpassa etikett storlek */
@@ -518,7 +518,7 @@
 
    /* Behållare för hela sektionen */
    .values-container {
-        padding: 2rem 2%;
+        padding: 8rem 2%;
     }
 
     /* Större rubrik */
@@ -562,6 +562,11 @@
     /* ==========================================
     Our community -sektion för desktop –  2650px
    ========================================== */
+
+    /* Anpassa behållare för community sektion  */
+    .community-container{
+        padding: 8rem 2%;
+    }
 
     /* Större underrubrik 2 */
     .community-content h2{
