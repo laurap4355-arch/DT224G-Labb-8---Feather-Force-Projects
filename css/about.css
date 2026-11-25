@@ -198,6 +198,7 @@
 /* Större underrubrik */
 .community-content h2 {
     font-size: 2rem;
+    max-width: 15ch;
 }
 
 /* Beskrivning */
@@ -252,130 +253,174 @@
 
 @media (min-width: 1024px){
 
-    /* Två kolumner för text och bild */
-    .hero-container {
-        display: grid;
-        grid-template-columns: 2fr 3fr;
-        align-items: center;
-        padding: 2rem 2%;
-        gap: 2rem;
-    }
+        /* Två kolumner för text och bild */
+        .hero-container {
+            display: grid;
+            grid-template-columns: 2fr 3fr;
+            align-items: center;
+            padding: 2rem 2%;
+            gap: 2rem;
+        }
 
-    /* Flyttar hero-innehållet uppåt */
-    .hero-content{
-        transform: translateY(-5rem);
-    }
+        /* Flyttar hero-innehållet uppåt */
+        .hero-content{
+            transform: translateY(-5rem);
+        }
+        
+        /* Större huvudrubrik på laptop */
+        .hero-content h1{
+            font-size: 3.5rem;
+        }
+
+        /* Anpassar textstorlek */
+        .hero-content p{
+            font-size: 1.125rem;
+            max-width: 42ch;
+            margin-bottom: 1rem;
+        }
+
+        /* Anpassar hero-bilden till sin kolumn */
+        .hero-container img {
+            display: block;
+            width: 100%;
+            height: auto;
+            border-radius: 1rem;
+            margin:0;
+        
+        }
+
+        /* Större knappar med mer mellanrum */
+        .button{
+            font-size: 1.125rem;
+            padding: 1.10rem 1rem;
+            margin-right: 1rem;
+        }
+        /*===================================================== */
+
+
+        /* ==========================================
+    Story-sektion för laptop –  1024px
+    ========================================== */
+
+    /* Bild och text placeras bredvid varandra */
+        .story-container {
+            grid-template-columns: 1fr 1fr;
+            align-items: center;
+            gap: 5rem;
+            padding: 2rem 2%;
+        }
+
+        /* Flytta upp hela story-content */
+        .story-content{
+            transform: translateY(-2.9rem);
+        }
+
+        /* Större rubrik på laptop */
+        .story-content h2 {
+            font-size: 2rem;
+        }
+
+        /* Begränsar textens bredd och anpassa storlek */
+        .story-content p {
+            max-width: 55ch;
+            font-size: 1.125rem;
+        }
+        /* =========================================== */
+
+
+        /* ==========================================
+    Values-sektion för laptop –  1024px
+    ========================================== */
+    /* Behållare för hela sektionen */
+    .values-container {
+            padding: 2rem 2%;
+        }
+
+        /* Större rubrik */
+        .values-content h2 {
+            font-size: 2rem;
+            max-width: none;
+        }
+
+        /* Större text */
+        .values-content p{
+            font-size: 1.125rem;
+        }
+
+        /* Tre kort bredvid varandra */
+        .values-grid {
+            grid-template-columns: repeat(3, minmax(0, 1fr));
+            gap: 1.5rem;
+            margin-top: 3rem;
+        }
+
+        /* Mer utrymme i korten */
+        .value-card {
+            padding: 2.5rem 1.5rem;
+        }
+
+        /* Större ikoner */
+        .value-icon {
+            width: 5rem;
+            height: 5rem;
+        }
+
+        /* Större rubriker */
+        .value-card h3 {
+            font-size: 1.55rem;
+        }
+
+        /* Större beskrivande text */
+        .value-card p {
+            font-size: 1.125rem;
+            max-width: 35ch;
+        }
+        /* ================================= */
+
+
+    /* ==========================================
+    Our community -sektion för laptop –  1024px
+    ========================================== */
     
-    /* Större huvudrubrik på laptop */
-    .hero-content h1{
-        font-size: 3.5rem;
-    }
-
-    /* Anpassar textstorlek */
-    .hero-content p{
-        font-size: 1.125rem;
-        max-width: 42ch;
-        margin-bottom: 1rem;
-    }
-
-    /* Anpassar hero-bilden till sin kolumn */
-    .hero-container img {
-        display: block;
-        width: 100%;
-        height: auto;
-        border-radius: 1rem;
-        margin:0;
-       
-    }
-
-    /* Större knappar med mer mellanrum */
-    .button{
-        font-size: 1.125rem;
-        padding: 1.10rem 1rem;
-        margin-right: 1rem;
-    }
-    /*===================================================== */
-
-
-    /* ==========================================
-   Story-sektion för laptop –  1024px
-   ========================================== */
-
-   /* Bild och text placeras bredvid varandra */
-    .story-container {
-        grid-template-columns: 1fr 1fr;
-        align-items: center;
-        gap: 5rem;
+    /* Behållare för hela our community - sektion */
+    .community-container{
         padding: 2rem 2%;
     }
 
-    /* Flytta upp hela story-content */
-    .story-content{
-        transform: translateY(-2.9rem);
-    }
-
-    /* Större rubrik på laptop */
-    .story-content h2 {
-        font-size: 2rem;
-    }
-
-    /* Begränsar textens bredd och anpassa storlek */
-    .story-content p {
-        max-width: 55ch;
-        font-size: 1.125rem;
-    }
-    /* =========================================== */
-
-
-    /* ==========================================
-   Values-sektion för laptop –  1024px
-   ========================================== */
-   /* Behållare för hela sektionen */
-   .values-container {
-        padding: 2rem 2%;
-    }
-
-    /* Större rubrik */
-    .values-content h2 {
-        font-size: 2rem;
-    }
-
-    /* Större text */
-    .values-content p{
-        font-size: 1.125rem;
-    }
-
-    /* Tre kort bredvid varandra */
-    .values-grid {
-        grid-template-columns: repeat(3, minmax(0, 1fr));
-        gap: 1.5rem;
+    /* Fyra kort bredvid varandra  */
+    .community-grid{
+        grid-template-columns: repeat(4, minmax(0,1fr));
         margin-top: 3rem;
+        gap: 1.5rem;
     }
 
-    /* Mer utrymme i korten */
-    .value-card {
-        padding: 2.5rem 1.5rem;
+    /* Centerera kortets innehåll */
+    .community-card{
+        align-items: center;
+        text-align: center;
+        gap: 0.5rem;
     }
 
-    /* Större ikoner */
-    .value-icon {
-        width: 5rem;
-        height: 5rem;
-    }
-
-    /* Större rubriker */
-    .value-card h3 {
-        font-size: 1.55rem;
+    /* Större underrubrik 2 */
+    .community-content h2{
+        font-size: 2rem;
+        max-width: none;
     }
 
     /* Större beskrivande text */
-    .value-card p {
+    .community-content p{
         font-size: 1.125rem;
-        max-width: 35ch;
     }
-    /* ================================= */
 
+    /* Större underrubrik 3 */
+    .community-card h3{
+        font-size: 1.5rem;
+    }
 
+    /* Större beskrivande text */
+    .community-card p{
+        font-size: 1rem;
+    }
 }
 
 
@@ -414,7 +459,7 @@
 
     /* Anpassar storleken på hero-etiketten */
     .hero-content .label {
-        font-size: 1.25rem;
+        font-size: 1.5rem;
     }
 
     /* Anpassar knappar för stora skärmar */
@@ -467,7 +512,7 @@
     /*===================================================== */
 
 
-    /* ==========================================
+   /* ==========================================
    Values-sektion för desktop –  2650px
    ========================================== */
 
@@ -488,7 +533,7 @@
 
     /* Större etikett */
     .values-content .label{
-        font-size: 1.25rem;
+        font-size: 1.5rem;
     }
 
     /* Mer utrymme i korten */
@@ -512,6 +557,39 @@
         font-size: 1.5rem;
     }
     /* ================================= */
+
+
+    /* ==========================================
+    Our community -sektion för desktop –  2650px
+   ========================================== */
+
+    /* Större underrubrik 2 */
+    .community-content h2{
+        font-size: 5.5rem;
+        max-width: none;
+    }
+
+    /* Större etikett */
+    .community-content .label{
+        font-size: 1.5rem;
+    }
+
+    /* Större beskrivande text */
+    .community-content p{
+        font-size: 1.5rem;
+    }
+
+    /* Större underrubrik 3 */
+    .community-card h3{
+        font-size: 2.5rem;
+    }
+
+    /* Större beskrivande text */
+    .community-card p{
+        font-size: 1.5rem;
+    }
+
+
 
 
     
