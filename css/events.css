@@ -34,12 +34,6 @@
     color: var(--color-white);
 }
 
-/* Sekundär knapp */
-.button-secondary {
-    background-color: transparent;
-    color: var(--color-text);
-    border: 2px solid var(--color-navy);
-}
 
 /* Hero-bild med rundade hörn och skugga */
 .hero-container img{
@@ -94,11 +88,11 @@
 .event-filter {
     padding: 0.6rem 1.25rem;
     border: 1px solid var(--color-border);
-    border-radius: 2rem;
+    border-radius: 32px;
     background-color: var(--color-white);
     
     color: var(--color-text);
-    font-size: 0.875rem;
+    font-size: 1rem;
     font-weight: 600;
     cursor: pointer;
 }
@@ -199,16 +193,6 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
 /* ==========================================
    Hero-sektion för laptop –  1024px
 ========================================== */
@@ -244,8 +228,8 @@
     /* Anpassar hero-bilden till sin kolumn */
     .hero-container img {
         display: block;
-        width: 90%;
-        height: 90%;
+        width: 100%;
+        height: auto;
         border-radius: 1rem;
         margin:0;
        
@@ -257,12 +241,50 @@
         padding: 1.10rem 1rem;
         margin-right: 1rem;
     }
+
+
+    /* ==========================================
+   Upcoming events - sektion för laptop –  1024px
+   ========================================== */
+
+    /* Anpassar sektionens avstånd */
+    .upcoming-container {
+        padding: 4rem 2%;
+    }
+
+    /* Tre evenemangskort bredvid varandra */
+    .events-grid {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 1.5rem;
+    }
+
+    /* Anpassar kortens innehåll */
+    .event-card-content {
+        padding: 1.5rem;
+    }
+
+    /* Större rubrik */
+    .upcoming-content h2 {
+        font-size: 3.5rem;
+    }
+
+    /* Större beskrivande text */
+    .upcoming-content p {
+        font-size: 1.125rem;
+    }
+
+    /* Evenemangets rubrik */
+    .event-card-content h3 {
+        font-size: 1.55rem;
+    }
+
+    /* Evenemangets beskrivning */
+    .event-card-content p {
+        font-size: 1.125rem;  
+    }
+
+    
 }
-
-
-
-
-
 
 
 
@@ -308,8 +330,79 @@
     }
 
     .hero-container img{
-        height: 90%;
-        width: 90%;
+        height: auto;
+        width: 100%;
     }
     /* =========================================== */
+
+
+
+    /* ==========================================
+    Upcoming events-sektion för Desktop – 2650px
+    ========================================== */
+
+    /* Anpassar sektionens avstånd */
+    .upcoming-container {
+        padding: 8rem 2%;
+    }
+
+    /* Större rubrik */
+    .upcoming-content h2 {
+        font-size: 5.5rem;
+    }
+
+    /* Större etikett */
+    .upcoming-content .label{
+        font-size: 1.5rem;
+    }
+    
+    /* Större beskrivande text */
+    .upcoming-content p {
+        font-size: 1.5rem;
+    }
+
+    /* Mer avstånd mellan filterknapparna */
+    .events-filters {
+        gap: 1rem;
+        margin: 2.5rem 0;
+    }
+
+    /* Större filterknappar */
+    .event-filter {
+        font-size: 1.2rem;
+        padding: 0.75rem 1.5rem;
+    }
+
+    /* Tre kort med större mellanrum */
+    .events-grid {
+        gap: 2rem;
+    }
+
+    /* Mer utrymme i kortens innehåll */
+    .event-card-content {
+        padding: 2rem;
+        gap: 1rem;
+    }
+
+    /* Större rubriker i korten */
+    .event-card-content h3 {
+        font-size: 2.5rem;
+    }
+
+    /* Större beskrivande text */
+    .event-card-content p {
+        font-size: 1.5rem;
+        max-width: 50ch;
+    }
+
+    /* Större kategorietikett */
+    .event-category {
+        font-size: 1rem;
+    }
+
+    /* Större länk */
+    .event-details-link {
+        font-size: 1.2rem;
+    }
+
 }
