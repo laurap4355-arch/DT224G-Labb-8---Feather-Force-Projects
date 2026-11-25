@@ -1,0 +1,145 @@
+
+/* ==========================
+   Contact-sektion mobile first
+========================== */
+
+/* Behållare för hela kontaktsektionen */
+.contact-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    padding: 2rem 5%;
+}
+
+/* Behållare för text och bild */
+.contact-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+}
+
+/* Kontaktsektionens rubrik */
+.contact-content h1 {
+    font-size: 2rem;
+}
+
+/* Beskrivande text */
+.contact-content p {
+    font-size: 1rem;
+}
+
+/* Bild under kontaktinformationen */
+.contact-content .contact-img {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 16px;
+}
+
+/* Behållare för kontaktformuläret */
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    padding: 1.5rem;
+
+    background-color: #fff;
+    border: 1px solid var(--color-border);
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.06);
+}
+
+/* Behållare för varje formulärfält */
+.form-field {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+/* Etiketter för formulärfält */
+.form-field label {
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+/* Gemensam stil för alla formulärfält */
+.form-field input,
+.form-field select,
+.form-field textarea {
+    display: block;
+    width: 100%;
+    min-width: 0;
+    padding: 0.875rem;
+    border: 1px solid #b7c3cc;
+
+    border-radius: 8px;
+    background-color: #fff;
+    font: inherit;
+    box-sizing: border-box;
+}
+
+/* Textfältets storlek kan ändras vertikalt */
+.form-field textarea {
+    resize: vertical;
+}
+
+/* Fokusmarkering för formulärfält */
+.form-field input:focus,
+.form-field select:focus,
+.form-field textarea:focus {
+    outline: 2px solid var(--color-primary);
+    outline-offset: 1px;
+}
+
+/* Röd markering för felaktiga fält */
+.form-field .is-invalid {
+    border: 2px solid #c62828;
+    background-color: #fff5f5;
+}
+
+/* Röd fokusmarkering vid fel */
+.form-field .is-invalid:focus {
+    outline-color: #c62828;
+}
+
+/* Röda felmeddelanden */
+.error-message {
+    color: #c62828;
+    font-size: 0.875rem;
+    line-height: 1.4;
+}
+
+/* Döljer tomma felmeddelanden */
+.error-message:empty {
+    display: none;
+}
+
+/* Knapp för att skicka formuläret */
+.contact-submit {
+    align-self: flex-start;
+    padding: 0.75rem 1.5rem;
+    background-color: var(--color-primary);
+    color: var(--color-white);
+    
+    border: none;
+    border-radius: 10px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+/* Statusmeddelande efter validering */
+.form-status {
+    color: var(--color-primary);
+    font-size: 0.95rem;
+    line-height: 1.5;
+}
+
+/* Döljer tomt statusmeddelande */
+.form-status:empty {
+    display: none;
+}
+
+
+
