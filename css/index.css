@@ -608,7 +608,7 @@
 
     /* Anpassar storleken på hero-etiketten */
     .hero-content .label {
-        font-size: 1.25rem;
+        font-size: 1.5rem;
     }
 
     /* Anpassar knappar för stora skärmar */
@@ -627,7 +627,7 @@
     /* ==========================================
    ABOUT-SEKTION – Desktop (2650px)
    ========================================== */
-   
+
    /* Anpassa underrubrik nivå 2 storlek*/
     .about-content h2{
         font-size: 5.5rem;
@@ -642,7 +642,7 @@
 
     /* Anpassa kortets rubrik storlek */
     .card-content h3 {
-        font-size: 2.3rem;
+        font-size: 2.5rem;
     }
 
     /* Anpassa beskrivande textstorlek */
@@ -653,7 +653,7 @@
    
     /* Anpassar storleken på hero-etiketten */
     .about-content .label {
-        font-size: 1.25rem;
+        font-size: 1.5rem;
     }
 
     /* Anpassar ikon storlek */
@@ -667,14 +667,14 @@
     EVENTS-SEKTION - DESKTOP (2650px) 
     ========================== */
     
-    /* Större rubrik på laptop */
+    /* Större rubrik på */
     .events-content h2 {
         font-size: 5.5rem;
     }
 
     /* ANpassa etikett storlek */
     .events-content .label{
-        font-size: 1.25rem;
+        font-size: 1.5rem;
     }
 
     /* Större rubrik i kortet */
