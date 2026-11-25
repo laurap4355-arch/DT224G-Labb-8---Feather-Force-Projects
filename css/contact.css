@@ -143,3 +143,115 @@
 
 
 
+
+/* ==========================
+   Contact sektion - laptop (1024px)
+========================== */
+
+@media (min-width: 1024px) {
+
+    /* Text och bild till vänster, formulär till höger */
+.contact-container {
+        grid-template-columns: 2fr 3fr;
+        align-items: start;
+        gap: 3rem;
+        padding: 4rem 2%;
+    }
+
+    /* Anpassar avstånd mellan text och bild */
+.contact-content {
+        gap: 2rem;
+    }
+
+    /* Större rubrik på laptop */
+.contact-content h1 {
+        font-size: 3.5rem;
+    }
+
+    /* Större beskrivande text */
+.contact-content p {
+        font-size: 1.125rem;
+    }
+
+    /* Bilden anpassas till vänster kolumn */
+.contact-content .contact-img {
+        width: 100%;
+        aspect-ratio: 5 / 3;
+        object-fit: cover;
+    }
+
+    /* Mer utrymme i kontaktformuläret*/
+.contact-form {
+        padding: 2.5rem;
+        gap: 1.75rem;
+    }
+
+}
+
+
+
+
+/* ==========================
+   Contact sektion - desktop (2650x)
+========================== */
+
+@media (min-width: 2650px) {
+
+    /* Text och bild till vänster, formulär till höger */
+.contact-container {
+        padding: 8rem 2%;
+    }
+
+    /* Större rubrik på laptop */
+.contact-content h1 {
+        font-size: 5.5rem;
+    }
+
+.contact-content .label{
+        font-size: 1.5rem;
+    }
+
+    /* Större beskrivande text */
+.contact-content p {
+        font-size: 1.5rem;
+        max-width: 60ch;
+    }
+
+    /* Bilden anpassas till vänster kolumn */
+.contact-content .contact-img {
+        width: 100%;
+        aspect-ratio: 5 / 3;
+        object-fit: cover;
+    }
+
+    /* Mer utrymme i kontaktformuläret*/
+.contact-form {
+        padding: 5rem;
+        gap: 1.75rem;
+        transform: translateY(7.5rem);
+    }
+
+    /* Gör formulärfälten större  */
+.form-field input,
+.form-field select,
+.form-field textarea {
+        min-height: 5rem;
+        font-size: 1.5rem;
+    }
+
+    /* Knapp för att skicka formuläret */
+.contact-submit {
+        padding: 1rem 1.5rem;
+        font-size: 1.5rem;
+    }
+
+    /* Etiketter för formulärfält */
+.form-field label {
+        font-size: 1.5rem;
+    }
+
+.error-message {
+        font-size: 1.25rem;
+    }
+
+}
