@@ -56,11 +56,7 @@
 
 
 /* ==========================
-  Our Story sektion - Mobile first 
-========================== */
-
-/* ==========================
-   STORY-SEKTION - MOBILE FIRST
+   Story-sektion - Mobile first
 ========================== */
 
 /* Behållare för bild och innehåll */
@@ -103,7 +99,78 @@
     max-width: 35ch;
     hyphens: auto;      /* Delar upp långa ord med bindestreck vid behov */
 }
+/*===================================================== */
 
+
+
+/* ==========================
+   Values-sektion - Mobile First
+========================== */
+
+/* Behållare för hela sektionen */
+.values-container {
+    padding: 2rem 5%;
+    border-bottom: 1px solid var(--color-border);
+}
+
+/* Behållare för rubrik och beskrivning */
+.values-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 1rem;
+}
+
+/* Sektionens rubrik */
+.values-header h2 {
+    font-size: 2rem;
+}
+
+/* Sektionens beskrivning */
+.values-header p {
+    font-size: 1rem;
+}
+
+/* Behållare för de tre korten */
+.values-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+
+/* Varje värderingskort */
+.value-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 1rem;
+
+    padding: 2rem 1.5rem;
+    background-color: var(--color-white);
+    border: 1px solid var(--color-border);
+    border-radius: 16px;
+}
+
+/* Kortets ikon */
+.value-icon {
+    display: block;
+    width: 4rem;
+    height: 4rem;
+    object-fit: contain;
+}
+
+/* Kortets rubrik */
+.value-card h3 {
+    font-size: 1.5rem;
+}
+
+/* Kortets beskrivning */
+.value-card p {
+    font-size: 1rem;
+}
 
 
 
@@ -157,6 +224,7 @@
         padding: 1.10rem 1rem;
         margin-right: 1rem;
     }
+    /*===================================================== */
 
 
     /* ==========================================
@@ -274,5 +342,8 @@
     .story-content a {
         transform: translateY(1rem);
     }
+    /*===================================================== */
+
+
 
 }
