@@ -531,7 +531,7 @@ a {
 /* ==========================================
   Header – Stora skärmar (från 1440px)
 ========================================== */
-@media (min-width: 1920px) {
+@media (min-width: 2650px) {
 
 
    /* Logotyp */
@@ -542,7 +542,7 @@ a {
 
    /* Navigationslänkar */
    .nav-list a {
-       font-size: 1.125rem;
+       font-size: 1.5rem;
       
    }
 
@@ -550,7 +550,7 @@ a {
    /* Join Us-knapp */
    .navbar .btn {
        padding: 1rem 4rem;
-       font-size: 1.15rem;
+       font-size: 1.5rem;
    }
   
 }
